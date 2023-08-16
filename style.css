@@ -1,0 +1,201 @@
+@font-face {
+   font-family: "hanken";
+   src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+   font-family: "hanken";
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#card {
+   box-shadow: 5px 5px 20px hsla(234, 85%, 45%, 0.1);
+   height: 440px;
+   width: 40%;
+   border-radius: 30px;
+   display: flex;
+}
+
+.sec {
+   padding: 5%;
+   flex: 1;
+}
+
+.sec-1 {
+   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   border-radius: 30px;
+   text-align: center;
+}
+
+.sec-1 > h2 {
+   color: hsla(0, 0%, 100%, 0.7);
+   text-align: center;
+}
+
+#circle {
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 180px;
+   height: 180px;
+   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   margin: 20px auto;
+}
+
+#circle > p {
+   color: hsla(0, 0%, 100%, 0.5);
+}
+
+#circle > p > span {
+   font: bold 3.5em "hanken";
+   display: block;
+   color: white;
+}
+
+.sec-1 > h3 {
+   font-weight: normal;
+   font-size: 1.8em;
+   color: white;
+   margin: 15px 0;
+}
+
+.sec-1 > p {
+   color: hsla(0, 0%, 100%, 0.7);
+}
+
+.sec-2 {
+   color: hsl(224, 30%, 27%);
+}
+
+.sec-2 > h2 {
+   font: bold 1.4em "hanken";
+   width: 100%;
+}
+
+#stats-container {
+   height: 65%;
+   width: 100%;
+   margin: 25px 0;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.stat {
+   border-radius: 10px;
+   flex: 1 1 100%;
+   padding: 5%;
+   margin-bottom: 12px;
+   font: bold 1em "hanken";
+   display: flex;
+   align-items: center;
+}
+
+.stat > * {
+   display: inline-block;
+}
+
+.stat img {
+   margin-right: 10px;
+}
+
+.stat:nth-child(1) {
+   color: hsl(0, 100%, 67%);
+   background: hsla(0, 100%, 67%, 0.06);
+}
+
+.stat:nth-child(2) {
+   color: hsl(39, 100%, 56%);
+   background: hsla(39, 100%, 56%, 0.06);
+}
+
+.stat:nth-child(3) {
+   color: hsl(166, 100%, 37%);
+   background: hsla(166, 100%, 37%, 0.06);
+}
+
+.stat:nth-child(4) {
+   color: hsl(234, 85%, 45%);
+   background: hsla(234, 85%, 45%, 0.06);
+}
+
+.sec-2 button {
+   border-radius: 40px;
+   background: hsl(224, 30%, 27%);
+   color: white;
+   display: block;
+   margin: 0 auto;
+   padding: 12px 30px;
+   width: 100%;
+   font: normal 1em "hanken";
+   border-style: none;
+}
+
+.sec-2 button:hover {
+   cursor: pointer;
+   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+   position: absolute;
+   display: block;
+   text-align: center;
+   width: 100%;
+   bottom: 5px;
+   opacity: 0.5;
+}
+
+@media (max-width: 1020px) {
+   #card {
+      width: 50%;
+      height: 420px;
+   }
+}
+
+@media (max-width: 900px) {
+   #card {
+      width: 60%;
+   }
+}
+
+@media (max-width: 720px) {
+   #card {
+      width: 80%;
+   }
+}
+
+@media (max-width: 520px) {
+   #container {
+      display: block;
+   }
+
+   #card {
+      width: 100%;
+      flex-wrap: wrap;
+      height: 100%;
+      box-shadow: none;
+   }
+   
+   .sec {
+      flex: 1 1 100%;
+   }
+
+   .sec-2 button {
+      padding: 20px 30px;
+      font-size: 1.2em;
+   }
+
+   .attribution {
+      display: none;
+   }
+}
