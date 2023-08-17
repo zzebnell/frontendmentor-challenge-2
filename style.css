@@ -99,6 +99,7 @@
    font: bold 1em "hanken";
    display: flex;
    align-items: center;
+   position: relative;
 }
 
 .stat > * {
@@ -155,7 +156,18 @@
    opacity: 0.5;
 }
 
-@media (max-width: 1020px) {
+.values {
+   position: absolute;
+   font-weight: bolder;
+   right: 10px;
+   color: hsl(224, 30%, 27%);
+}
+
+.values > span {
+   color: hsla(224, 30%, 27%, 0.5);
+}
+
+@media (max-width: 1150px) {
    #card {
       width: 50%;
       height: 420px;
@@ -172,13 +184,13 @@
    }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
    #card {
       width: 80%;
    }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 580px) {
    #container {
       display: block;
    }
