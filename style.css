@@ -166,6 +166,10 @@
    #card {
       width: 60%;
    }
+
+   .attribution {
+      display: none;
+   }
 }
 
 @media (max-width: 720px) {
@@ -180,12 +184,17 @@
    }
 
    #card {
+      border-radius: 0 0 30px 30px;
       width: 100%;
       flex-wrap: wrap;
       height: 100%;
       box-shadow: none;
    }
    
+   .sec-1 {
+      border-radius: 0 0 30px 30px;
+   }
+
    .sec {
       flex: 1 1 100%;
    }
@@ -193,9 +202,5 @@
    .sec-2 button {
       padding: 20px 30px;
       font-size: 1.2em;
-   }
-
-   .attribution {
-      display: none;
    }
 }
